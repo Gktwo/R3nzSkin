@@ -37,62 +37,62 @@ public:
 	std::vector<std::pair<std::uint32_t, const char*>> wards_skins;
 	
 	std::vector<const char*> minions_skins{
-		"Minion", "Summer Minion",
-		"Project Minion", "Snowdown Minion",
-		"Draven Minion", "Star Guardian Minion",
-		"Arcade Minion", "Snowdown 2 Minion",
-		"Odyssey Minion", "Mouse Minion", "Arcane Minion"
+		u8"经典", u8"泳池排队",
+		u8"源计划", u8"冰雪节",
+		u8"德莱文大头", u8"星之守护者",
+		u8"电玩", u8"冰雪节2",
+		u8"奥德赛", u8"猫狗大战", u8"双城之战"
 	};
 
 	std::vector<const char*> turret_skins{
-		"Default Order Turret", "Default Chaos Turret",
-		"Snow Order Turret", "Snow Chaos Turret",
-		"Twisted Treeline Order Turret", "Twisted Treeline Chaos Turret",
-		"URF Order Turret", "URF Chaos Turret",
-		"Arcade Turret",
-		"Temple of Lily and Lotus Turret",
-		"Arcane Order Turret", "Arcane Chaos Turret",
-		"Butcher's Bridge Order Turret", "Butcher's Bridge Chaos Turret",
-		"Howling Abyss Order Turret", "Howling Abyss Chaos Turret"
+		u8"默认防御塔", u8"默认防御塔2",
+		u8"冰雪节防御塔1", u8"冰雪节防御塔2",
+		u8"扭曲丛林防御塔1", u8"扭曲丛林防御塔2",
+		u8"无限火力防御塔1", u8"无限火力防御塔2",
+		u8"电玩派对",
+		u8"极限闪击",
+		u8"双城之战1", u8"双城之战2",
+		u8"屠夫之桥1", u8"屠夫之桥2",
+		u8"嚎哭深渊1", u8"嚎哭深渊2"
 	};
 
 	std::vector<jungle_mob_skin_info> jungle_mobs_skins{
 		{
-			"Baron",
+			u8"纳什男爵",
 			{ FNV("SRU_Baron") },
-			{ "Baron", "Snowdown Baron", "Championship Baron", "Lunar Revel Baron", "MSI Baron", "Odyssey Baron", "Championship Birthday Baron", "Ruined King Baron" }
+			{ u8"经典", u8"冰雪节", u8"冠军杯赛", u8"新年皮肤", u8"MSI皮肤", u8"奥德赛", u8"冠军杯赛2", u8"破败模式" }
 		},
 		{
-			"Blue",
+			u8"蓝buff",
 			{ FNV("SRU_Blue") },
-			{ "Blue", "Dark Blue", "Pool Party Blue", "Ruined King Blue" }
+			{ u8"经典", u8"暗色", u8"泳池派对", u8"破败模式" }
 		},
 		{
-			"Red",
+			u8"红buff",
 			{ FNV("SRU_Red") },
-			{ "Red", "Pool Party Red", "Ruined King Red" }
+			{ u8"经典", u8"暗色",u8"泳池派对", u8"破败模式" }
 		},
 		{
-			"Scuttle",
+			u8"迅捷蟹",
 			{ FNV("Sru_Crab") },
-			{ "Scuttle", "Halloween Light Scuttle", "Halloween Dark Scuttle", "Ruined King Scuttle" }
+			{ u8"经典", u8"万圣节白", u8"万圣节黑", u8"破败模式" }
 		},
 		{
-			"Krug",
+			u8"石甲虫",
 			{ FNV("SRU_Krug"), FNV("SRU_KrugMini"), FNV("SRU_KrugMiniMini") },
-			{ "Krug", "Dark Krug" }
+			{ u8"黄色", u8"蓝色" }
 		},
 		{
-			"Razorbeak",
+			u8"6只因",
 			{ FNV("SRU_Razorbeak"), FNV("SRU_RazorbeakMini") },
-			{ "Razorbeak", "Chicken Razorbeak" }
+			{ u8"经典", u8"愚人节小鸡" }
 		}
 	};
 
 	std::vector<specialSkin> specialSkins{
-		{ FNV("Katarina"), 29, 36, { "Dagger 1", "Dagger 2", "Dagger 3", "Dagger 4", "Dagger 5", "Dagger 6" }},
-		{ FNV("Renekton"), 26, 32, { "Head off", "Head on", "Fins", "Ultimate" } },
-		{ FNV("MissFortune"), 16, 16, { "Scarlet fair", "Zero hour", "Royal arms", "Starswarm" } },
-		{ FNV("Ezreal"), 5, 5, { "Level 1", "Level 2", "Level 3" } }
+		{ FNV("Katarina"), 29, 36, { u8"匕首 1", u8"匕首 2", u8"匕首 3", u8"匕首 4", u8"匕首 5", u8"匕首 6" }},
+		{ FNV("Renekton"), 26, 32, { u8"无头盔", u8"有头盔", "终极形态", "极限形态" } },
+		{ FNV("MissFortune"), 16, 16, { u8"血色女王", u8"总攻时刻", u8"皇家武装", u8"星辰虫群" } },
+		{ FNV("Ezreal"), 5, 5, { u8"初形态", u8"中形态", u8"高形态" } }
 	};
 };

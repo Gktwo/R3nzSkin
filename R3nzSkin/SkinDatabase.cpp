@@ -38,18 +38,19 @@ void SkinDatabase::load() noexcept
 			this->champions_skins[champ_name].push_back({ champion->champion_name.str, skin_display_name_translated, i });
 
 			if (i == 7 && champ_name == FNV("Lux")) {
-				this->champions_skins[champ_name].push_back({ "LuxAir", "Elementalist Air Lux", i });
-				this->champions_skins[champ_name].push_back({ "LuxDark", "Elementalist Dark Lux", i });
-				this->champions_skins[champ_name].push_back({ "LuxFire", "Elementalist Fire Lux", i });
-				this->champions_skins[champ_name].push_back({ "LuxIce", "Elementalist Ice Lux", i });
-				this->champions_skins[champ_name].push_back({ "LuxMagma", "Elementalist Magma Lux", i });
-				this->champions_skins[champ_name].push_back({ "LuxMystic", "Elementalist Mystic Lux", i });
-				this->champions_skins[champ_name].push_back({ "LuxNature", "Elementalist Nature Lux", i });
-				this->champions_skins[champ_name].push_back({ "LuxStorm", "Elementalist Storm Lux", i });
-				this->champions_skins[champ_name].push_back({ "LuxWater", "Elementalist Water Lux", i });
-			} else if (i == 6 && champ_name == FNV("Sona")) {
-				this->champions_skins[champ_name].push_back({ "SonaDJGenre02", "DJ Sona 2", i });
-				this->champions_skins[champ_name].push_back({ "SonaDJGenre03", "DJ Sona 3", i });
+				this->champions_skins[champ_name].push_back({ "LuxAir", u8"大元素使 气旋", i });
+				this->champions_skins[champ_name].push_back({ "LuxDark", u8"大元素使 黑暗", i });
+				this->champions_skins[champ_name].push_back({ "LuxFire", u8"大元素使 火焰", i });
+				this->champions_skins[champ_name].push_back({ "LuxIce", u8"大元素使 冰霜", i });
+				this->champions_skins[champ_name].push_back({ "LuxMagma", u8"大元素使 熔岩", i });
+				this->champions_skins[champ_name].push_back({ "LuxMystic", u8"大元素使 秘术", i });
+				this->champions_skins[champ_name].push_back({ "LuxNature", u8"大元素使 自然", i });
+				this->champions_skins[champ_name].push_back({ "LuxStorm", u8"大元素使 风暴", i });
+				this->champions_skins[champ_name].push_back({ "LuxWater", u8"大元素使 水流", i });
+			}
+			else if (i == 6 && champ_name == FNV("Sona")) {
+				this->champions_skins[champ_name].push_back({ "SonaDJGenre02", u8"DJ Sona 震荡", i });
+				this->champions_skins[champ_name].push_back({ "SonaDJGenre03", u8"DJ Sona 空灵", i });
 			}
 		}
 	}

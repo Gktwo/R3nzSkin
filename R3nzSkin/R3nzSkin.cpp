@@ -38,7 +38,7 @@ __declspec(safebuffers) static void WINAPI DllAttach([[maybe_unused]] LPVOID lp)
 
 	cheatManager.start();
 	if (HideThread(::GetCurrentThread()))
-		cheatManager.logger->addLog("Thread Hided!\n");
+		cheatManager.logger->addLog(u8"线程已隐藏!\n");
 
 	cheatManager.memory->Search(true);
 	while (true) {
@@ -49,16 +49,16 @@ __declspec(safebuffers) static void WINAPI DllAttach([[maybe_unused]] LPVOID lp)
 		else if (cheatManager.memory->client->game_state == GGameState_s::Running)
 			break;
 	}
-	cheatManager.logger->addLog("GameClient found!\n");
+	cheatManager.logger->addLog(u8"客户端找到!\n");
 	
 	std::this_thread::sleep_for(500ms);
 	cheatManager.memory->Search(false);
-	cheatManager.logger->addLog("All offsets found!\n");
+	cheatManager.logger->addLog(u8"找到所有偏移量!\n");
 	std::this_thread::sleep_for(500ms);
 	
 	cheatManager.config->init();
 	cheatManager.config->load();
-	cheatManager.logger->addLog("CFG loaded!\n");
+	cheatManager.logger->addLog(u8"控制流图已加载!\n");
 	
 	cheatManager.hooks->install();
 		
