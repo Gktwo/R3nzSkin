@@ -23,6 +23,8 @@ public:
 	bool rainbowText{ false };
 	float fontScale{ 1.0f };
 	bool heroName{ true };
+	bool StyleEditor{ false };
+
 	bool quickSkinChange{ false };
 	// player
 	std::int32_t current_combo_skin_index{ 0 };

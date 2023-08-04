@@ -11,6 +11,7 @@
 #include "fnv_hash.hpp"
 #include "imgui/imgui.h"
 
+
 inline static void footer() noexcept
 {
 	using namespace std::string_literals;
@@ -236,6 +237,19 @@ void GUI::render() noexcept
 						}
 					}
 				} ImGui::hoverInfo(u8"随机更改所有英雄的皮肤.");
+
+				
+				static bool show_app_style_editor = false;
+				ImGui::Checkbox(u8"自定义主题",  &show_app_style_editor);
+				if (show_app_style_editor)
+				{
+					ImGui::Begin(u8"主题编辑器", &show_app_style_editor);
+					ImGui::ShowStyleEditor();
+					ImGui::End();
+				}
+	
+
+
 
 				ImGui::SliderFloat(u8"字体大小", &cheatManager.config->fontScale, 1.0f, 2.0f, "%.3f");
 				if (ImGui::GetIO().FontGlobalScale != cheatManager.config->fontScale) {
